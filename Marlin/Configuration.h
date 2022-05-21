@@ -583,9 +583,9 @@
   #else
     // ANET A8 Standard Extruder at 210 Degree Celsius and 100% Fan
     //(measured after M106 S255 with M303 E0 S210 C8)
-    #define  DEFAULT_Kp 10.57
-    #define  DEFAULT_Ki 0.51
-    #define  DEFAULT_Kd 55.19
+    #define  DEFAULT_Kp 10.94
+    #define  DEFAULT_Ki 0.54
+    #define  DEFAULT_Kd 55.11
   #endif
 #endif // PIDTEMP
 
