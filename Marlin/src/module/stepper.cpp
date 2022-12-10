@@ -1997,7 +1997,7 @@ uint32_t Stepper::block_phase_isr() {
           PAGE_SEGMENT_UPDATE_POS(E);
         }
       #endif
-      TERN_(HAS_FILAMENT_RUNOUT_DISTANCE, runout.block_completed(current_block));
+       TERN_(HAS_FILAMENT_RUNOUT_DISTANCE, runout.block_completed(current_block));
       discard_current_block();
     }
     else {

@@ -207,8 +207,8 @@ void menu_move() {
     else {
       #if ENABLED(DELTA)
         ACTION_ITEM(MSG_FREE_XY, []{ line_to_z(delta_clip_start_height); ui.synchronize(); });
-      #endif
-    }
+    #endif
+
     #if HAS_Z_AXIS
       #define _AXIS_MOVE(N) SUBMENU_N(N, MSG_MOVE_N, []{ _menu_move_distance(AxisEnum(N), []{ lcd_move_axis(AxisEnum(N)); }); });
       REPEAT_S(2, NUM_AXES, _AXIS_MOVE);

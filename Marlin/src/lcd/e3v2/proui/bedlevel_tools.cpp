@@ -35,6 +35,7 @@
 
 #if BOTH(DWIN_LCD_PROUI, HAS_LEVELING)
 
+#include "ubl_tools.h"
 #include "../../marlinui.h"
 #include "../../../core/types.h"
 #include "dwin.h"
